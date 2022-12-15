@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>number method</h2>
+    <script>
+var a="90";
+var b =Number(a);
+document.write(b+10)//when i give string,make a number
+document.write("<br>");
+
+var c="50.35 ";
+var d=parseInt(c);
+document.write(d);
+document.write("<br>");
+
+var c="50.35 ";
+var d=parseFloat(c);
+document.write(d);
+document.write("<br>");
+
+var x=30;
+var y=Number.isFinite(x);
+document.write(y);
+document.write("<br>");
+
+var e=2.5;
+var f=  Number.isInteger(e);
+document.write(f);
+document.write("<br>");
+
+var m=305.2222254;
+var n=m.toFixed(4);
+document.write(n);
+document.write("<br>");
+
+
+var j=3.5282254;
+var k=j.toPrecision(3);
+document.write(k);
+
+    </script>
+</body>
+</html>
