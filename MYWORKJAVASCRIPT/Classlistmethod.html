@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *
+        {
+            box-sizing: border-box;
+            padding: 0px;
+            margin: 0px;
+        }
+        .one
+        {
+            height: 500px;
+            width: 100%;
+            background-color: wheat;
+        }
+        .two
+        {
+            height:50px;
+            width: 100%;
+            text-align: center;
+            line-height: 40px;
+            font-size: 20px;
+            text-transform: capitalize;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            background-color: teal;
+        }
+        .three
+        {
+            color: rgb(21, 195, 238);  
+            background-color: rgb(236, 22, 76); 
+        }
+       
+        .contain
+        {
+            height: 100px;
+            width: 100%;
+            background-color: rgb(252, 80, 80);
+        }
+
+         .five
+        {
+            height: 200px;
+            width: 100%;
+            background-color:rgb(67, 95, 15);
+        } 
+        .six
+        {
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <!-- add.remove , toggle(class) ,  contains(class) , item(index) , length -->
+    
+
+
+    <div id="header" class="one">
+
+        <div id="title" class="two">
+            our website
+        </div>
+
+        <div class="contain">
+
+        </div>
+    </div>
+
+
+    <script>
+
+        document.getElementById("title").addEventListener("contextmenu", abc);
+        document.getElementById("title").addEventListener("click", xyz);
+        document.querySelector(".contain").addEventListener("click", plus);
+     function abc()
+    {
+     document.getElementById("title").classList.toggle("three");
+    }
+    function xyz()
+    {
+        document.getElementById("title").classList.remove("three");
+    }
+
+    function plus()
+    {
+        document.querySelector(".contain").classList.toggle("five");
+        this.style.border = "2px solid black"
+    }
+
+   var s = document.getElementById("title").classList.contains("two");
+    console.log(s);
+
+
+   
+    </script>
+</body>
+</html>

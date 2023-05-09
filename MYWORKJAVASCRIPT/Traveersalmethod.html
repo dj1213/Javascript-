@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #parent {
+            height: 300px;
+            width: 100%;
+            background-color: rgb(195, 211, 95);
+
+        }
+
+        #childelement {
+            background-color: steelblue;
+            padding: 10px;
+
+        }
+
+        #child {
+            display: flex;
+            flex-wrap: wrap;
+
+        }
+
+        .a {
+            height: 100px;
+            width: 100px;
+            margin: auto;
+        }
+
+        .item1 {
+            background-color: rgb(221, 8, 221);
+        }
+
+        .item2 {
+            background-color: rgb(164, 140, 34);
+        }
+
+        .item3 {
+            background-color: rgb(103, 163, 29);
+        }
+
+        .item4 {
+            background-color: rgb(26, 207, 92);
+        }
+
+        .item5 {
+            background-color: rgb(218, 82, 14);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="parent">
+        <h1>parent element</h1>
+
+        <div id="childelement">
+            <h1>child element</h1>
+            <div id="child">
+                <div class="a item1">a</div>
+                <div class="a item2">b</div>
+                <div class="a item3" id="child_c">c</div>
+                <div class="a item4">d</div>
+                <div class="a item5">e</div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        var a = document.getElementById("childelement").parentElement.style.background = "red";
+        console.log(a);
+
+        var b = document.getElementById("child").parentNode.style.background = "brown";
+        console.log(b);
+
+        var c = document.getElementById("child_c").parentElement;
+        console.log(c);
+    </script>
+</body>
+
+</html>

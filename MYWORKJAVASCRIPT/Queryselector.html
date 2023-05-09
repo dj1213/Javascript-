@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />    
+    
+    <style>
+      .one
+      {
+        color: tomato;
+      }
+      .test
+      {
+        background-color: darkorange;
+      }
+      .test1
+      {
+        color: turquoise;
+      }
+      .test3
+      {
+        font-size: large;
+        color: rgb(26, 197, 29);
+      }
+      .two
+      {
+        color: rgb(79, 17, 222);
+      }
+      .three
+      {
+        color: rgb(229, 62, 229);
+      }
+    </style>
+</head>
+<body>
+    <div id="box1">
+      <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, mollitia?</h1>
+    <h1>two, ipsum dolor sit amet consectetur adipisicing elit. Praesentium, beatae!</h1>
+    <h1>three ipsum dolor sit amet consectetur adipisicing elit. Eius, qui.</h1>
+    </div>
+
+    <div id="box2">
+       <ul class="list">
+        <li>home</li>
+        <li>home</li>
+        <li>home</li>
+        <li>home</li>
+        <li>home</li>
+        <li>home</li>
+       </ul>
+
+       <ul class="list">
+        <li>home</li>
+        <li>home</li>
+        <li>home</li>
+        <li>home</li>
+        <li>home</li>
+        <li>home</li>
+       </ul>
+    </div>
+    <p class="para two three">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla, iure?</p>
+
+    
+    
+
+    <script>
+
+var b = document.querySelector("#box1").setAttribute("class","one");
+var c =document.querySelector(".list").style.backgroundColor = "red";
+console.log(c);
+var e  = document.querySelectorAll(".list")[1].className = "test , test1";
+
+var j = document.querySelectorAll(".list")[0].classList = "test3";
+ 
+
+var k = document.querySelector(".para").classList.add("two" ,"three");
+var l = document.querySelector(".para").classList.remove("two");
+
+// var a  = document.querySelectorAll(".list")[2].innerHTML;
+//         document.write(a);
+
+//  var d = document.querySelectorAll("div")[1].innerHTML;
+//  document.write(d);
+//  console.log(d);
+
+        
+
+</script>
+</body>
+</html>

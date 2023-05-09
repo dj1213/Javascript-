@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     .box1
+     {
+        width: max-content;
+        margin: auto;
+        text-transform: capitalize;
+        font-weight: bold;
+     }
+     .box2
+     {
+        color: rgb(24, 72, 15);
+        font-size: large;
+        text-align: center;
+        text-transform: uppercase;
+     }
+
+     .box3
+     {
+        color: green;
+     }
+     #para
+     {
+        border-bottom: 2px solid red;
+        font-size: large;
+     }
+
+     .four
+     {
+        color: blue;
+        background-color: aqua;
+        border-top: 5px solid yellow;
+     }
+    </style>
+</head>
+<body>
+   <h2>javascript is the world popular scripting language</h2>
+   <p id="demo" >javascript is the change html content</p>
+   <button onclick="test()" id="button" ondblclick="plus()">click me </button>
+   
+     <div id="header" class="head">
+    </div>
+
+    <div id="navigation" class="nav">
+    </div>
+    <p id="one" ></p> 
+
+    <script>
+
+function test()
+{
+   var a = document.getElementById("demo").innerHTML = "hello javascript";
+   demo.style.color = "red";
+}
+
+function plus()
+{
+   var b = document.getElementById("demo").innerText = "javascript is the change html content";
+   demo.style.color = "green";
+   var c = document.getElementById("button");
+   button.style.top = "100px";
+ 
+}
+
+
+        var a = document.getElementById("header").innerHTML = "<h1 class=box1>this is a heading </h1> <p class='box2'>this is a paragraph </p>";
+
+
+       var d = document.getElementsByClassName("nav").innerHTML = "<p id='para'>this is a that</p>"
+
+     document.write(d);
+     var e = document.getElementById("para").innerHTML;
+     para.style.color = 'blue';
+    para.style.background = 'yellow';
+
+
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- getmethod  
+    innerText,innerHTML,getAttribute,GetAttribute,GetAttributeNode , GetAttributes 
+     -->
+     <style>
+        .fone{
+            border: 1ps solid black;
+        }
+     </style>
+</head>
+<body>
+    <h1 id="hone" class="jone" onclick="test()" style="color:red;" >
+        <p class="h2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique, repellendus!</p> 
+        <p class="h3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique, repellendus!</p> 
+        <p class="h4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique, repellendus!</p> 
+    </h1>
+
+   
+
+     <script>
+        // var a = document.getElementById("hone").innerText
+        // console.log(a);
+
+       
+        // var c = document.getElementById("hone").innerHTML;
+        // console.log(c);
+
+        //  var b = document.getElementById("hone").getAttribute("class");
+        // console.log(b);
+
+        // var e = document.getElementById("hone").getAttribute("id");
+        // console.log(e);
+        
+        // var f = document.getElementById("hone").getAttributeNode("style");
+        // console.log(f);
+
+        // var j = document.getElementById("hone").attributes;
+        // console.log(j);
+
+        var a =document.getElementById("hone").getAttributeNode("class");
+        console.log(a);
+     </script>
+</body>
+</html>

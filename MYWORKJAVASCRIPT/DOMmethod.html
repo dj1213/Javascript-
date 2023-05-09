@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *
+        {
+            box-sizing: border-box;
+            margin: 0px;
+            padding: 0px;
+        }
+        #nav
+        {
+            min-height: 50px;
+            width: 100%;
+            background-color: rgb(163, 88, 88);
+            color: rgb(39, 16, 16);
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: large;    
+        }
+        #nav h1
+        {
+            width: fit-content;
+            margin: auto;
+            line-height: 40px;
+        }
+        .navbar
+        {
+            min-height: 50px;
+            background-color: aqua;
+            color: black;
+        }
+        .menu
+        {
+            list-style: none;
+            display: flex;
+        }
+        
+        .menu .menuitem a
+         { 
+            display: block;
+            padding: 5px;
+            text-decoration: none;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            line-height: 50px; }
+        .image
+        {  border: 1px solid black;  width: 100%;}
+        .image img
+        { width: 100%; }
+
+    </style>
+</head>
+<body>
+    
+    <nav id="nav">
+        <h1>website</h1>
+    </nav>
+    <div class="navbar">
+        <ul class="menu">
+            <li class="menuitem"><a href="">home</a></li>
+            <li class="menuitem"><a href="">about us</a></li>
+            <li class="menuitem"><a href="">gallary</a></li>
+            <li class="menuitem"><a href="">contact</a></li>
+            <li class="menuitem"><a href="">phone</a></li>
+            <li class="menuitem"><a href="">career</a></li>
+        </ul>
+    </div>
+    <div class="image">
+        <img src="https://th.bing.com/th/id/R.039d3dfeb60098d9dfd223a43fcf5739?rik=gy0Mf4Xuecc6ig&riu=http%3a%2f%2fwww.thelightwurx.com%2fwp-content%2fimages%2fresponsive-hero-image.jpg&ehk=DHxBDh9%2bn4aGxD7dfv73ri2agUcGgylfoq55fouunYo%3d&risl=&pid=ImgRaw&r=0" alt="">
+        <p class="para"></p>
+    </div>
+
+    <script>
+        var a = document.getElementById("nav");
+        console.log(a);
+
+        var b = document.getElementsByClassName("menu")
+        console.log(b);
+    </script>
+
+</body>
+</html>

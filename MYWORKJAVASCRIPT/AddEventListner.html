@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .three
+        {
+            height: 100px;
+            width: 100px;
+            background-color: yellow;
+            transition: all 1.2s ease-in-out;
+        }
+        .four
+        {
+            height: 200px;
+            width: 200px;
+            background-color: red;
+            transition: 1.2s;
+            transform: perspective(500px) rotateY(120deg) rotateY(0deg); 
+            transition-timing-function: ease-in-out;        }
+      
+            #box
+            {
+                height: 200px;
+                width: 200px;
+                background-color:darkred;
+                border: 1px solid yellow;
+            }
+            
+            #box1
+            {
+                height: 100px;
+                width: 100px;
+                background-color:rgb(51, 202, 34);
+                border: 1px solid rgb(169, 98, 28);
+            }
+            
+    </style>
+</head>
+<body>
+
+
+<div id="two" ></div>
+<button id="button">submit</button>
+
+<div id="one">this is paragraph</div>
+<button id="buttonone"> buttonone</button>
+
+<div id="box">
+    <div id="box1"></div>
+</div>
+    <script>
+
+var button = document.getElementById("button").onclick = test;
+var onebutton = document.getElementById("button").ondblclick = stte;
+        function test()
+        {
+            var division = document.getElementById("two").classList.add("three");
+            console.log(division);
+
+        }
+        function stte()
+        {
+            var one = document.getElementById("two").classList.remove("three");    
+        }
+        
+
+        // ADDEVENT LISTNER 
+        var para = document.getElementById("buttonone").addEventListener("click",function(){
+            document.getElementById("one").style.color = "red";
+        });
+        document.getElementById("buttonone").addEventListener("click", min);
+        function min()
+        {
+            document.getElementById("one").style.backgroundColor = "pink";
+        }
+
+        document.getElementById("box1").addEventListener("click", function(){
+            document.getElementById("box").style.background = "aqua";
+        });
+
+
+        
+        document.getElementById("box").addEventListener("click", function(){
+            document.getElementById("box1").style.background = "pink";
+        });
+
+        document.getElementById("box").addEventListener("click", function(){
+            document.getElementById("box1").style.background = "pink";
+        });
+
+
+      
+        
+
+        
+
+
+    
+
+    </script>
+</body>
+</html>
